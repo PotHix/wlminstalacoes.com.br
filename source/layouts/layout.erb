@@ -46,12 +46,7 @@
       <div class="container">
         <div id="page-home">
           <div class="header">
-            <div class="content_wrapper">
-              <div class="grid_1">
-                <h1 class="page_title">WLM Instalações de portas</h1>
-                <div class="page_title_subhead">Há mais de 10 anos instalando portas com qualidade.</div>
-              </div>
-            </div>
+            <%= partial "topheader" %>
           </div>
 
           <div class="content">
@@ -60,7 +55,7 @@
           </div>
 
           <div class="bottom_bg">
-            <div class="copyright">&copy; WLM Instalações <%= Time.now.year %></div>
+            <%= partial "copyright" %>
           </div>
         </div>
       </div>
