@@ -1,14 +1,15 @@
-rebuild:
-	@echo "Cleaning up"
-	@rm -rf build
-	@make build
+rebuild: clean build
 
 build:
 	@echo "Building"
 	@bundle exec middleman build
+	@echo "Done!"
 
-publish:
-	@make build
+clean:
+	@echo "Cleaning up"
+	@rm -rf build
+
+publish: build
 	@echo "Publishing"
 	@git log --oneline | head -n1 | sed -r 's/^[a-zA-Z0-9]+ //g' > build/last_commit
 	@git checkout gh-pages
@@ -20,3 +21,4 @@ publish:
 	@rm -rf build last_commit
 	@git push
 	@git checkout master
+	@echo "Done!"
