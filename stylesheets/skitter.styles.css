@@ -1,6 +1,5 @@
 /* Skitter styles */
 
-
 .box_skitter {width:700px;height:300px; position:relative;}
 .box_skitter .shadow {position: absolute; bottom: -33px; width: 919px; height: 33px; }
 .box_skitter ul {display:none;}

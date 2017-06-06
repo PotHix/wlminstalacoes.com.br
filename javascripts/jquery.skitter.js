@@ -10,7 +10,6 @@
  * @example http://thiagosf.net/projects/jquery/skitter/
  */
 
-
 (function($) {
 
 	var number_skitter = 0;
@@ -1875,4 +1874,3 @@
 	});
 
 })(jQuery)
-;
